@@ -1,0 +1,75 @@
+{
+  "name": "@neabyte/fuzzy-net",
+  "description": "Bitwise fuzzy search index projecting hashed byte token features",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "unbuild --minify",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "rm -rf dist && npm run build"
+  },
+  "keywords": [
+    "approximate-string-matching",
+    "bit-manipulation",
+    "bit-matrix",
+    "bitwise-operations",
+    "bloom-filter",
+    "byte-tokenization",
+    "document-ranking",
+    "feature-hashing",
+    "fuzzy-search",
+    "in-memory-index",
+    "information-retrieval",
+    "lexical-search",
+    "query-ranking",
+    "search-engine",
+    "search-index",
+    "spell-tolerance",
+    "string-matching",
+    "text-indexing",
+    "text-search",
+    "typo-tolerance"
+  ],
+  "dependencies": {
+    "@neabyte/byte-tokenizer": "^0.1.0"
+  },
+  "devDependencies": {
+    "@typescript/typescript6": "^6.0.2",
+    "unbuild": "^3.6.1"
+  },
+  "author": {
+    "name": "NeaByteLab",
+    "email": "me@neabyte.com",
+    "url": "https://github.com/NeaByteLab"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeaByteLab/Fuzzy-Net.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NeaByteLab/Fuzzy-Net/issues"
+  },
+  "homepage": "https://github.com/NeaByteLab/Fuzzy-Net#readme",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
